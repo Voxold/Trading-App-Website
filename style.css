@@ -2,6 +2,7 @@
 body {
     box-sizing: border-box;
     background: black;
+
 }
 
 /* ------------------- header ------------------- */
@@ -123,3 +124,23 @@ body {
 }
 
 /* ------------------- main-2 ------------------- */
+
+.main-2  {
+    display: flex;
+    border: orangered solid 2px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    padding: 2rem 0;
+}
+
+.main-2 .main-2-s {
+    display: block;
+    border: 1px yellow solid;
+    width: 350px;
+    height:200px
+}
+
