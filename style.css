@@ -1,0 +1,33 @@
+
+body {
+    box-sizing: border-box;
+    background: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    padding: 0 3rem;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+}
+
+.header button {
+    background: linear-gradient(to right, #02bedc , #003095);;
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.header button:hover {
+    border: 1.5px solid #fff ;
+    background: transparent;
+    cursor: pointer;
+}
