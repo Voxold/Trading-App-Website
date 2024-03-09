@@ -47,18 +47,22 @@ body {
     background-color: #181818;
     color: #fff;
     border-radius: 20px;
+    z-index: 1000;
 }
 
 .scroll-footer a {
+    padding: 0.8rem 1rem;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
     font-family: Inter, sans-serif;
     font-weight: 400;
+    border-radius: 10px;
+    transition: 0.4s;
 }
 
 .scroll-footer a:hover{
-    color: #02bedc;
+    background: linear-gradient(to right, #02bedc , #003095);
 }
 
 /* ------------------- main-1 ------------------- */
