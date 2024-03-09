@@ -46,3 +46,39 @@ body {
     color: #fff;
     border-radius: 20px;
 }
+
+.scroll-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.scroll-footer a:hover{
+    color: #02bedc;
+}
+
+.main-1 {
+    display: flex;
+    background: #181818;
+    border: orangered 2px solid;
+}
+
+.main-1 .main-1-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    border: yellow solid 2px;
+}
+
+.main-1 img {
+    width: 150px;
+    height: 150px;
+}
+
+.main-1 .main-1-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
