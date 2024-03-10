@@ -49,6 +49,7 @@ body {
     color: #fff;
     border-radius: 20px;
     z-index: 1000;
+    box-shadow: 0 2px 20px black;
 }
 
 .scroll-footer a {
@@ -69,8 +70,12 @@ body {
 /* ------------------- main-1 ------------------- */
 .main-1 {
     display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
     background: #181818;
     border: orangered 2px solid;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .main-1 .main-1-right {
@@ -88,8 +93,7 @@ body {
 
 .main-1 .main-1-left {
     display: block;
-    position: relative;
-    width: 60%;
+    width: 50%;
     color: #fff;
 }
 
@@ -140,9 +144,91 @@ body {
 .main-2 .main-2-s {
     display: inline-block;
     text-align: center;
-    border: 1px yellow solid;
     width: 350px;
     height:230px;
     color: #fff;
+    background: #181818;
 }
 
+.main-2 .main-2-s i {
+    margin-top: 1.2rem;
+    color: #02bedc;
+    font-size: 55px;
+}
+
+.main-2 .main-2-s h3 {
+    font-size: 20px;
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+}
+
+.main-2 .main-2-s p {
+    font-size: 15px;
+    color: grey;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+
+/* ------------------- main-3 ------------------- */
+
+.main-3 {
+    display: flex;
+    border: 2px solid yellow;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    height: auto;
+    padding: 5rem 0;
+
+} 
+
+.main-3 .main-3-left {
+    display: inline-block;
+    color: #fff;
+    width: 50%;
+}
+
+.main-3 .main-3-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.main-3 .main-3-right img{
+    width: 450px;
+    height: 300px;
+}
+
+.main-3 h1 {
+    font-size: 60px;
+    font-family: Anton, sans-serif;
+    color: #02bedc;
+    margin-left: 3rem;
+}
+
+.main-3 p {
+    margin-left: 3rem;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+.main-3 button {
+    background: linear-gradient(to right, #02bedc , #003095);
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin-left: 3rem;
+}
+
+.main-3 button:hover {
+    border: 1px solid #fff ;
+    background: transparent;
+    cursor: pointer;
+}
