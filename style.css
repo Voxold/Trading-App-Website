@@ -460,8 +460,8 @@ body {
     height: 20rem;
     background-color: #181818;
 }
-/* ------------------- main-8 ------------------- */
-.main-8 {
+/* ------------------- Brands Section ------------------- */
+.brands {
     display: flex;
     flex-wrap: wrap;
     grid-gap :10px;
@@ -469,6 +469,10 @@ body {
     width: 100%;
     height: 20rem;
     background-color: #181818;
+}
+
+.brands .brands-container img {
+    width: 150px;
 }
 /* ------------------- Footer ------------------- */
 .footer {
@@ -532,7 +536,9 @@ body {
     font-size: 18px;
     font-weight: 300;
     font-family: inter, sans-serif;
-    height: 10rem;
+    height: 12rem;
+    border-top: 0.2px grey solid;
+    background-color: #181818;
 }
 
 .footer .footer-by span {
