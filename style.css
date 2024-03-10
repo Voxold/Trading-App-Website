@@ -52,6 +52,7 @@ body {
     box-shadow: 0 2px 20px black;
 }
 
+
 .scroll-footer a {
     padding: 0.8rem 1rem;
     color: #fff;
@@ -100,8 +101,10 @@ body {
 .main-1 h1 {
     font-size: 60px;
     font-family: Anton, sans-serif;
-    color: #02bedc;
-    margin-left: 3rem;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
+    margin-left: 3rem; 
 }
 
 .main-1 p {
@@ -152,7 +155,9 @@ body {
 
 .main-2 .main-2-s i {
     margin-top: 1.2rem;
-    color: #02bedc;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
     font-size: 55px;
 }
 
@@ -206,7 +211,9 @@ body {
 .main-3 h1 {
     font-size: 60px;
     font-family: Anton, sans-serif;
-    color: #02bedc;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
     margin-left: 3rem;
 }
 
@@ -231,4 +238,64 @@ body {
     border: 1px solid #fff ;
     background: transparent;
     cursor: pointer;
+}
+
+/* ------------------- main-4 ------------------- */
+
+.main-4 {
+    display: flex;
+    border: 2px solid yellow;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    height: auto;
+    padding: 5rem 0;
+}
+
+.main-4 .main-4-left{
+    display: inline-block;
+    border: #003095 solid 2px;
+    color: #fff;
+    width: 50%;
+}
+
+.main-4 .main-4-left h1 {
+    font-size: 30px;
+    font-family: Anton, sans-serif;
+    color: #02bedc;
+}
+
+.main-4 .main-4-left p {
+    font-size: 16px;
+    font-family: inter, sans-serif;
+}
+
+.main-4 .main-4-left .array {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+}
+
+.main-4 .main-4-left .array i{
+    font-size: 40px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
+
+}
+
+.main-4 .main-4-left .array i:hover{
+    color: #fff;
+    background: linear-gradient(to right, #02bedc , #003095);
+    cursor: pointer;
+ }
+
+.main-4 .main-4-right {
+    width: 40%;
+    border: orangered solid 2px;
+    color: #fff;
+
 }
