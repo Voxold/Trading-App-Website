@@ -138,9 +138,11 @@ body {
 }
 
 .main-2 .main-2-s {
-    display: block;
+    display: inline-block;
+    text-align: center;
     border: 1px yellow solid;
     width: 350px;
-    height:200px
+    height:230px;
+    color: #fff;
 }
 
