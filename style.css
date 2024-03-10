@@ -245,10 +245,9 @@ body {
 .main-4 {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid yellow;
     justify-content: center;
     align-items: center;
-    background-color: #181818;
+    background-color: black;
     height: auto;
     padding: 5rem 0;
     width: 100%;
@@ -267,7 +266,9 @@ body {
 .main-4 .main-4-left h1 {
     font-size: 30px;
     font-family: Anton, sans-serif;
-    color: #02bedc;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
 }
 
 .main-4 .main-4-left p {
@@ -299,55 +300,62 @@ body {
 
 /*--- Right ---*/
 .main-4 .main-4-right {
+    background-color: #181818;
     width: 40%;
-    border: orangered solid 2px;
-
-}
-
-.main-4 .main-4-right .review {
     display: flex;
     flex-wrap: wrap;
-    border: orangered solid 2px;
-    color: #fff;
-    width: 100%;
     padding: 0;
 }
+
+
 
 /* upper */
-.main-4 .main-4-right .review .upper{
+.main-4 .main-4-right .upper{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 0;
+    padding: 1rem 2rem;
+    height: auto;
 }
 
+.main-4 .main-4-right .upper .left {
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
 
-.main-4 .main-4-right .review .upper img {
-    width: 150px;
-    height: 150px;
+.main-4 .main-4-right .upper .left  img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
-.main-4 .main-4-right .review .upper .div i {
+.main-4 .main-4-right .upper .left h3 {
     font-size: 20px;
-    color: orangered;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: #fff;
 }
-.main-4 .main-4-right .review .upper .quoat {
-    border: #003095 solid 2px;
-    width: 100%;
-    display: flex;
-    flex: end;
+.main-4 .main-4-right .upper .left i {
+    font-size: 20px;
+    color: #02bedc;
 }
 
-.main-4 .main-4-right .review .upper .quoat i {
-    font-size: 50px;
-    color: orangered;
+
+.main-4 .main-4-right .upper .right i {
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    
 }
 
 /* lower */
-.main-4 .main-4-right .review .lower {
-    border: yellow solid 2px;
+.main-4 .main-4-right .lower {
     color: #fff;
     width: 100%;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .main-4 .main-4-right .lower p{
@@ -359,7 +367,174 @@ body {
 /* ------------------- main-5 ------------------- */
 
 .main-5 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap :10px;
     border: #02bedc 2px solid;
     width: 100%;
+    height: auto;
+    background-color: #181818;
+}
+
+.main-5 .main-5-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+
+.main-5 .main-5-left img {
+    width: 300px;
+}
+
+.main-5 .main-5-right {
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    padding: 5rem 2rem;
+}
+
+.main-5 .main-5-right h1{
+    font-size: 40px;
+    font-family: Anton, sans-serif;
+    background: linear-gradient(to right, #02bedc , #003095);
+    background-clip: text;
+    color: transparent; 
+}
+
+.main-5 .main-5-right p {
+    font-size: 16px;
+    font-family: inter, sans-serif;
+    color: grey;
+}
+
+.main-5 .main-5-right .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-5 .main-5-right .buttons button {
+    width: 170px;
+    height: 40px;
+    margin: 1rem 1.5rem 0 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.main-5 .main-5-right .buttons .b1 {
+    background-color: #fff;
+    color: black;
+}
+
+.main-5 .main-5-right .buttons .b2 {
+    background-color: black;
+    color: #fff;
+}
+
+.main-5 .main-5-right .buttons button:hover {
+    background: linear-gradient(to right, #02bedc , #003095);
+    color: #fff;
+}
+
+/* ------------------- main-6 ------------------- */
+.main-6 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap :10px;
+    border: #02bedc 2px solid;
+    width: 100%;
+    height: 20rem;
+    background-color: #181818;
+}
+/* ------------------- main-7 ------------------- */
+.main-7 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap :10px;
+    border: #02bedc 2px solid;
+    width: 100%;
+    height: 20rem;
+    background-color: #181818;
+}
+/* ------------------- main-8 ------------------- */
+.main-8 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap :10px;
+    border: #02bedc 2px solid;
+    width: 100%;
+    height: 20rem;
+    background-color: #181818;
+}
+/* ------------------- Footer ------------------- */
+.footer {
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: 20rem;
+    background-color: black;
+}
+
+.footer .footer-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #181818;
+
+}
+
+.footer .footer-menu .menu{
+    width: 200px;
+    height: 200px;
+}
+
+.footer .footer-menu .menu h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: inter, sans-serif;
+    margin: 1rem 0;
+}
+
+
+.footer .footer-menu .menu a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: grey;
+    font-family: inter, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0.5rem 0;
+    transition: 0.4s;
+}
+
+.footer .footer-menu .menu a:hover{
+    color: #fff;
+
+}
+
+.footer .footer-menu .menu a i{
+    color: #02bedc;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer .footer-by {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: inter, sans-serif;
     height: 10rem;
+}
+
+.footer .footer-by span {
+    color: #02bedc;
 }
