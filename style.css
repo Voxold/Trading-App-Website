@@ -143,13 +143,13 @@ body {
     color: #fff;
     margin-left: 3rem;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     font-family: inter, sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .main-1 button:hover {
-    border: 1px solid #fff ;
+    border: 0.5px solid #fff ;
     background: transparent;
     cursor: pointer;
 }
@@ -185,6 +185,12 @@ body {
     background-clip: text;
     color: transparent;
     font-size: 55px;
+    transition: .5s;
+}
+
+.main-2 .main-2-s i:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
 }
 
 .main-2 .main-2-s h3 {
@@ -257,10 +263,13 @@ body {
     border-radius: 20px;
     color: #fff;
     margin-left: 3rem;
+    font-size: 15px;
+    font-family: inter, sans-serif;
+    font-weight: 300;
 }
 
 .main-3 button:hover {
-    border: 1px solid #fff ;
+    border: 0.5px solid #fff ;
     background: transparent;
     cursor: pointer;
 }
@@ -284,10 +293,11 @@ body {
     display: inline-block;
     color: #fff;
     width: 50%;
+    padding: 2rem 0;
 }
 
 .main-4 .main-4-left h1 {
-    font-size: 45px;
+    font-size: 50px;
     font-family: Anton, sans-serif;
     background: linear-gradient(to right, #02bedc , #003095);
     background-clip: text;
@@ -297,14 +307,13 @@ body {
 .main-4 .main-4-left p {
     font-size: 16px;
     font-family: inter, sans-serif;
-    padding: 1rem 0;
 }
 
 .main-4 .main-4-left .array {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    width: 15%;
+    width: 20%;
+    margin-top: 2rem;
 }
 
 .main-4 .main-4-left .array i{
@@ -314,7 +323,7 @@ body {
     background-clip: text;
     color: transparent;
     border: #02bedc solid 2px;
-
+    margin-right: 1rem;
 }
 
 .main-4 .main-4-left .array i:hover{
@@ -326,25 +335,55 @@ body {
 
 /*--- Right ---*/
 .main-4 .main-4-right {
-    background-color: #181818;
     width: 40%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    gap:10px;
+}
+
+.main-4 .main-4-right .review {
+    background: #181818;
     border-radius: 20px;
     box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
     border: 5px #181818 solid;
-
 }
 
+.main-4 .main-4-right .slide-review {
+    background: #181818;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
+    border: 5px #181818 solid;
+    transform-style: preserve-3d;
+    animation: slide .2s linear backwards;
+    display: none;
+}
 
+@keyframes slide {
+    0%{
+        transform: rotateX(180deg);
+    }
+}
+
+.main-4 .main-4-right .slide-review.active {
+    display: block;
+}
+
+.main-4 .main-4-right .slide-review > * {
+    animation: slideContent .2s linear .2s backwards;
+}
+
+@keyframes slideContent {
+    0%{
+        opacity: 0;
+        transform: scale(.9);
+    }
+}
 
 /* upper */
 .main-4 .main-4-right .upper{
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0;
+    width: auto;
     padding: 1rem 2rem;
     height: auto;
 }
@@ -372,7 +411,6 @@ body {
     color: #02bedc;
 }
 
-
 .main-4 .main-4-right .upper .right i {
     background: linear-gradient(to right, #02bedc , #003095);
     background-clip: text;
@@ -394,15 +432,15 @@ body {
     font-family: inter,sans-serif;
 }
 
-/* ------------------- main-5 ------------------- */
 
+/* ------------------- main-5 ------------------- */
 .main-5 {
     display: flex;
     flex-wrap: wrap;
     grid-gap :10px;
     height: auto;
     width: 90%;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .main-5 .main-5-left {
@@ -422,7 +460,7 @@ body {
     width: 40%;
     color: #fff;
     background: #181818;
-    padding: 5rem 2rem;
+    padding: 0 2rem 11rem;
     border-radius: 20px;
     box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
     border: 5px #181818 solid;
@@ -430,7 +468,7 @@ body {
 }
 
 .main-5 .main-5-right h1{
-    font-size: 40px;
+    font-size: 50px;
     font-family: Anton, sans-serif;
     background: linear-gradient(to right, #02bedc , #003095);
     background-clip: text;
@@ -481,7 +519,7 @@ body {
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 5rem 0;
+    padding: 5rem 0 1rem;
     width: 90%;
 }
 
@@ -501,11 +539,10 @@ body {
     height: 2.5rem;
     margin: 0 1rem;
     color: #fff;
-    border: none;
     border-radius: 5px;
     font-size: 16px;
     font-family: inter, sans-serif;
-    background-color: black;
+    background-color: #181818;
 }
 
 
@@ -517,7 +554,7 @@ body {
 }
 
 /* Box */
-.pricing-box {
+.main-6 .pricing-box {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -527,16 +564,15 @@ body {
     padding: 2rem 0;
 }
 
-.pricing-box .box {
-    padding: 4rem;
-    border: #02bedc solid 2px;
+.main-6 .pricing-box .box {
+    padding: 2rem 4rem;
     border-radius: 20px;
     box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
     border: 5px #181818 solid;
     background: #181818;
 }
 
-.pricing-box .box h1 {
+.main-6 .pricing-box .box h1 {
     color: #fff;
     font-size: 25px;
     font-weight: 500;
@@ -544,36 +580,63 @@ body {
 }
 
 /* Price */
-.pricing-box .box span:first-child {
+.main-6 .pricing-box .box .price span:first-child {
     color: #02bedc;
     font-size: 35px;
     font-weight: 500;
     font-family: inter, sans-serif;
 }
 
-.pricing-box .box span:last-child{
+.main-6 .pricing-box .box .price span:last-child{
     color: grey;
     font-size: 16px;
     font-family: inter, sans-serif;
 }
 
+.main-6 .pricing-box .box .price {
+    animation: price .2s linear;
+    transform-origin: top;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes price {
+    0%{
+        opacity: .5;
+        transform: scaleY(.5);
+    }
+}
+
+.main-6 .pricing-box .box .price.price-year {
+    display: none;
+}
+
+
+
 /* List */
-.pricing-box .box .list p{
+.main-6 .pricing-box .box .list {
+    margin-top: 1rem;
+    border-top: grey 0.05px solid;
+    padding: 1rem;
+}
+
+
+.main-6 .pricing-box .box .list p{
     color: grey;
     font-size: 16px;
     font-weight: 300;
     font-family: inter, sans-serif;
 }
 
-.pricing-box .box .list .bxs-check-circle {
+.main-6 .pricing-box .box .list .bxs-check-circle {
     color: #02bedc;
 }
 
-.pricing-box .box .list .bxs-x-circle {
+.main-6 .pricing-box .box .list .bxs-x-circle {
     color:grey;
 }
 
-.pricing-box .box button {
+.main-6 .pricing-box .box button {
     width: 100%;
     height: 35px;
     color: #fff;
@@ -587,14 +650,12 @@ body {
     margin-top: 2rem;
 }
 
-.pricing-box .box button:hover {
+.main-6 .pricing-box .box button:hover {
     border: .5px solid #fff ;
     color: #fff;
     background: transparent;
     cursor: pointer;
 }
-
-
 
 /* ------------------- main-7 ------------------- */
 .main-7 {
@@ -687,6 +748,7 @@ body {
     padding: 0 2rem;
     height: 7rem;
     width: 80%;
+    margin: 2rem 0;
 }
 
 
@@ -710,6 +772,7 @@ body {
 .brands .brands-container img {
     width: 5rem;
 }
+
 /* ------------------- Footer ------------------- */
 .footer {
     display: inline-block;
@@ -743,7 +806,6 @@ body {
     font-family: inter, sans-serif;
     margin: 1rem 0;
 }
-
 
 .footer .footer-menu .menu a {
     display: block;
