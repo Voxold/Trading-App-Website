@@ -1,9 +1,6 @@
 // Reviews
 
 
-  
-
-
 // Pricing Plan
 let monthBtn = document.querySelector('.main-6 .pricing-plan .monthe-button')
 let yearBtn = document.querySelector('.main-6 .pricing-plan .year-button')

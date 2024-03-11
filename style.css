@@ -492,7 +492,7 @@ body {
     width: 100%;
 }
 
-.main-6 .pricing-plan button {
+.main-6 .pricing-plan span {
     width: 8rem;
     height: 2.5rem;
     margin: 0 1rem;
@@ -602,11 +602,11 @@ body {
 }
 
 .pricing-box .box .list .bxs-check-circle {
-    color: greenyellow;
+    color: #02bedc;
 }
 
 .pricing-box .box .list .bxs-x-circle {
-    color: rgb(249, 0, 0);
+    color:grey;
 }
 
 .pricing-box .box button {
@@ -620,11 +620,12 @@ body {
     border: none;
     border-radius: 5px;
     background: linear-gradient(to right, #02bedc , #003095);
+    margin-top: 2rem;
 }
 
 .pricing-box .box button:hover {
-    border: 1px solid #02bedc ;
-    color: #02bedc;
+    border: .5px solid #fff ;
+    color: #fff;
     background: transparent;
     cursor: pointer;
 }
