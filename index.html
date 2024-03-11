@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <script src="/Trading-App-Website/main.js"></script>
 </head>
 
 <body>
@@ -166,8 +165,8 @@
     <!-- MAIN - 6 -->
     <div class="main-6">
         <div class="pricing-plan">
-            <span class="monthe-button">Monthly</span>
-            <span class="year-button">Yearly</span>
+            <div class="button monthe-button active">Monthly</div>
+            <div class="button year-button">Yearly</div>
         </div>
 
         <div class="pricing-box">
@@ -202,8 +201,8 @@
             <!-- premium -->
             <div class="box">
                 <h1>Premium</h1>
-                <div class="price-month"><span>$9.99 / </span><span class="mnth">Monthly</span></div>
-                <div class="price-year"><span>$99.99 / </span><span class="mnth">Yearly</span></div>
+                <div class="price-month"><span>$9.99 / </span><span>Monthly</span></div>
+                <div class="price-year"><span>$99.99 / </span><span>Yearly</span></div>
                 <div class="list">
                     <p><i class='bx bxs-check-circle'></i><span> Trade Learning Acess</span></p>
                     <p><i class='bx bxs-check-circle'></i><span> Graphical Chart Reports</span></p>
@@ -296,5 +295,27 @@
             <p>Created By <span>Bilal Aj</span> All Rights Reserved!</p>
         </div>
     </div>
+
+    <script>
+        let monthBtn = document.querySelector('.main-6 .pricing-plan .monthe-button')
+        let yearBtn = document.querySelector('.main-6 .pricing-plan .year-button')
+        let monthlyPlan = document.querySelectorAll('.main-6 .pricing-box .box .price-month')
+        let yearlyPlan = document.querySelectorAll('.main-6 .pricing-box .box .price-year')
+
+        yearBtn.onclick = () => {
+        monthBtn.classList.remove('active');
+        yearBtn.classList.add('active');
+        monthlyPlan.forEach(mo => {mo.computedStyleMap.display = 'none'});
+        yearlyPlan.forEach(yr => {yr.computedStyleMap.display = 'block'});
+        }
+
+        monthBtn.onclick = () => {
+        monthBtn.classList.add('active');
+        yearBtn.classList.remove('active');
+        monthlyPlan.forEach(mo => {mo.computedStyleMap.display = 'block'});
+        yearlyPlan.forEach(yr => {yr.computedStyleMap.display = 'none'});
+        }
+
+    </script>
 </body>
 </html>
