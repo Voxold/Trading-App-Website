@@ -24,10 +24,6 @@ body {
     align-items: center;
     height: 10rem;
     width: 90%;
-    background-color: #181818;
-    border-radius: 100px;
-    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
-    border: 5px #181818 solid;
 }
 
 .header img {
@@ -37,18 +33,22 @@ body {
 }
 
 .header button {
-    background: linear-gradient(to right, #02bedc , #003095);
-    width: 180px;
-    height: 40px;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
+    width: 200px;
+    height: 50px;
     margin-right: 2rem;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to right, #02bedc , #003095);
+    font-size: 15px;
+    font-weight: 300;
+    font-family: inter, sans-serif;
+    border: none;
 }
 
 .header button:hover {
-    border: 1px solid #fff ;
-    background: transparent;
+    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
+    border: 5px #181818 solid;
+    background: #181818;
     cursor: pointer;
 }
 
@@ -209,13 +209,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #181818;
     height: auto;
-    padding: 5rem 0;
+    padding: 2rem 0;
     width: 90%;
-    border-radius: 20px;
-    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
-    border: 5px #181818 solid;
 } 
 
 .main-3 .main-3-left {
@@ -232,8 +228,8 @@ body {
 }
 
 .main-3 .main-3-right img{
-    width: 450px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
 }
 
 .main-3 h1 {
@@ -250,6 +246,7 @@ body {
     font-size: 16px;
     font-family: Inter, sans-serif;
     font-weight: 400;
+
 }
 
 .main-3 button {
@@ -277,7 +274,7 @@ body {
     align-items: center;
     height: auto;
     padding: 5rem 0;
-    width: 100%;
+    width: 90%;
     grid-gap: 10px;
 }
 
@@ -290,7 +287,7 @@ body {
 }
 
 .main-4 .main-4-left h1 {
-    font-size: 30px;
+    font-size: 45px;
     font-family: Anton, sans-serif;
     background: linear-gradient(to right, #02bedc , #003095);
     background-clip: text;
@@ -300,6 +297,7 @@ body {
 .main-4 .main-4-left p {
     font-size: 16px;
     font-family: inter, sans-serif;
+    padding: 1rem 0;
 }
 
 .main-4 .main-4-left .array {
@@ -403,11 +401,8 @@ body {
     flex-wrap: wrap;
     grid-gap :10px;
     height: auto;
-    background-color: #181818;
     width: 90%;
-    border-radius: 20px;
-    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
-    border: 5px #181818 solid;
+    margin-bottom: 5rem;
 }
 
 .main-5 .main-5-left {
@@ -419,14 +414,19 @@ body {
 }
 
 .main-5 .main-5-left img {
-    width: 300px;
+    width: 40rem;
 }
 
 .main-5 .main-5-right {
     display: inline-block;
-    width: auto;
+    width: 40%;
     color: #fff;
+    background: #181818;
     padding: 5rem 2rem;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
+    border: 5px #181818 solid;
+    height: 27vh;
 }
 
 .main-5 .main-5-right h1{
