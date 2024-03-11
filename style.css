@@ -517,16 +517,48 @@ body {
 
 .pricing-box {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    grid-gap: 10px;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
     border: #02bedc solid 2px;
+    padding: 2rem 0;
 }
 
 .pricing-box .box {
+    border: #02bedc solid 2px;
+}
+
+.pricing-box .box h1 {
     color: #fff;
-    
+    font-size: 25px;
+    font-weight: 500;
+    font-family: inter, sans-serif;
+}
+
+.pricing-box .box .price-month span {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: inter, sans-serif;
+}
+
+
+
+.pricing-box .box .list p{
+    color: grey;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: inter, sans-serif;
+}
+
+.pricing-box .box .list .bxs-check-circle {
+    color: greenyellow;
+}
+
+.pricing-box .box .list .bxs-x-circle {
+    color: rgb(249, 0, 0);
 }
 
 
