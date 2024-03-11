@@ -27,8 +27,7 @@ body {
 }
 
 .header img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
     margin-left: 2rem;
 }
 
@@ -79,10 +78,16 @@ body {
     font-weight: 400;
     border-radius: 10px;
     transition: 0.4s;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
+    border: 5px #181818 solid;
+    background-color: #181818;
 }
 
 .scroll-footer a:hover{
     background: linear-gradient(to right, #02bedc , #003095);
+    border: none;
+    box-shadow: none;
 }
 
 /* ------------------- main-1 ------------------- */
@@ -480,13 +485,9 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #181818;
     height: auto;
     padding: 5rem 0;
     width: 90%;
-    border-radius: 20px;
-    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
-    border: 5px #181818 solid;
 }
 
 .main-6 .pricing-plan {
@@ -494,7 +495,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    border: #02bedc 2px solid;
 }
 
 .main-6 .pricing-plan button {
@@ -504,15 +504,19 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
-    border: 1px solid #02bedc;
+    border-radius: 5px;
     font-size: 16px;
     font-family: inter, sans-serif;
     background-color: black;
 }
 
+.main-6 .pricing-plan .yearly {
+    border: 1px solid #02bedc;
+}
 .main-6 .pricing-plan .monthly,
 .main-6 .pricing-plan .yearly:hover {
     background: linear-gradient(to right, #02bedc , #003095);
+    border: none;
 }
 
 .pricing-box {
@@ -522,12 +526,16 @@ body {
     grid-gap: 50px;
     justify-content: center;
     align-items: center;
-    border: #02bedc solid 2px;
     padding: 2rem 0;
 }
 
 .pricing-box .box {
+    padding: 4rem;
     border: #02bedc solid 2px;
+    border-radius: 20px;
+    box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
+    border: 5px #181818 solid;
+    background: #181818;
 }
 
 .pricing-box .box h1 {
@@ -561,6 +569,26 @@ body {
     color: rgb(249, 0, 0);
 }
 
+.pricing-box .box button {
+    width: 100%;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    font-family: inter, sans-serif;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #02bedc , #003095);
+}
+
+.pricing-box .box button:hover {
+    border: 1px solid #02bedc ;
+    color: #02bedc;
+    background: transparent;
+    cursor: pointer;
+}
+
 
 
 /* ------------------- main-7 ------------------- */
@@ -571,7 +599,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #181818;
-    width: 99%;
+    width: 70%;
     border-radius: 20px;
     box-shadow: inset -3px -3px 5px rgb(12, 12, 12), inset 3px 3px 15px rgb(13, 13, 13);
     border: 5px #181818 solid;
@@ -600,7 +628,7 @@ body {
 .main-7 .lower {
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 80%;
     margin: 2rem;
 }
 
