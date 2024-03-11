@@ -506,11 +506,11 @@ body {
     background-color: black;
 }
 
-.main-6 .pricing-plan .yearly {
+.main-6 .pricing-plan .year-button {
     border: 1px solid #02bedc;
 }
-.main-6 .pricing-plan .monthly,
-.main-6 .pricing-plan .yearly:hover {
+.main-6 .pricing-plan .monthe-button,
+.main-6 .pricing-plan .year-button:hover {
     background: linear-gradient(to right, #02bedc , #003095);
     border: none;
 }
@@ -543,6 +543,12 @@ body {
 
 
 /* Price Month */
+.pricing-box .box .price-month {
+    margin: 1rem 0 2rem;
+    padding: 1rem 0;
+    border-bottom: 0.05px grey solid;
+}
+
 .pricing-box .box .price-month span {
     color: #02bedc;
     font-size: 35px;
@@ -556,6 +562,16 @@ body {
 }
 
 /* Price Year */
+.pricing-box .box .price-year {
+    margin: 1rem 0 2rem;
+    padding: 1rem 0;
+    border-bottom: 0.1px grey solid;
+}
+
+.pricing-box .box .price-year {
+    display: none;
+}
+
 .pricing-box .box .price-year span {
     color: #02bedc;
     font-size: 35px;
