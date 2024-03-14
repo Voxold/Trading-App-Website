@@ -21,7 +21,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     width: 90%;
+    border: 2px solid orangered;
 }
 
 .header img {
@@ -611,8 +613,6 @@ body {
     display: none;
 }
 
-
-
 /* List */
 .main-6 .pricing-box .box .list {
     margin-top: 1rem;
@@ -842,4 +842,134 @@ body {
 
 .footer .footer-by span {
     color: #02bedc;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Header */
+    .header img {
+        width: 150px;
+        margin: 2rem 0;
+        border: 2px solid orangered;
+    }
+
+    .header .header-content {
+        justify-content: center;
+        border: 2px solid orangered;
+    }
+
+    .header button {
+        margin: 0 3rem 1rem;
+        position: relative;
+    }
+
+    /* Scrolled Bar */
+    .scroll-footer {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .scroll-footer a {
+        margin: 1rem;
+    }
+
+    /* Main - 1 */
+    .main-1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-1 .main-1-left {
+        width: 99%;
+    }
+    
+    .main-1 .main-1-right img {
+        width: 400px;
+    }
+
+    /* Main - 3 */
+    .main-3 {
+        flex-direction: column;
+    }
+
+    .main-3 .main-3-left {
+        width: 99%;
+        margin-bottom: 3rem;
+    }
+    
+
+    .main-3 .main-3-right img {
+        display: none;
+    }
+
+    .main-4 {
+        flex-direction: column;
+    }
+
+    .main-4 .main-4-left {
+        width: 90%;
+    }
+
+    .main-4 .main-4-right {
+        width: 99%;
+    }
+
+    .main-4 .main-4-right p {
+        width: 85%;
+    }
+
+    /* Main - 5 */
+    .main-5 .main-5-left{
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .main-5 .main-5-left img {
+        width: 500px;
+        margin-bottom: 1rem;
+    }
+
+    .main-5 .main-5-right {
+        width: 90%;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    /* Main - 1 */
+    .main-7 {
+        width: 90%;
+    }
+
+    .main-7 .upper {
+        text-align: start;
+        margin: 0 30px 30px;
+        margin-bottom: 0;
+    }
+
+    .main-7 .upper p {
+        width: 90%;
+    }
+
+    .main-7 .lower {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-7 .lower input {
+        margin: 5px;
+    }
+
+    .main-7 .lower button {
+        margin: 10px;
+    }
+
 }
