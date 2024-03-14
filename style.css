@@ -23,7 +23,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    border: 2px solid orangered;
 }
 
 .header img {
@@ -849,12 +848,10 @@ body {
     .header img {
         width: 150px;
         margin: 2rem 0;
-        border: 2px solid orangered;
     }
 
     .header .header-content {
         justify-content: center;
-        border: 2px solid orangered;
     }
 
     .header button {
